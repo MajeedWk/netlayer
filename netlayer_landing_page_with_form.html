@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetLayer</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0e1b2c;
+            color: white;
+        }
+        header {
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #0e1b2c;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav a, .lang-toggle {
+            margin-left: 30px;
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .hero {
+            padding: 80px 40px;
+            text-align: left;
+            background-color: #0e1b2c;
+        }
+        .hero h2 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+        .hero p {
+            font-size: 18px;
+            color: #cbd5e0;
+        }
+        .buttons {
+            margin-top: 25px;
+        }
+        .buttons a {
+            display: inline-block;
+            margin-right: 15px;
+            padding: 10px 25px;
+            border-radius: 4px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .btn-primary {
+            background-color: #7b61ff;
+            color: white;
+        }
+        .btn-secondary {
+            background-color: #1f2b3a;
+            color: white;
+        }
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            padding: 60px 20px;
+            background-color: #0a1727;
+        }
+        .stat {
+            text-align: center;
+        }
+        .stat h3 {
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+        .contact {
+            padding: 40px;
+            background-color: #0e1b2c;
+            border-top: 1px solid #1f2b3a;
+        }
+        .contact h2 {
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        input, textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            border-radius: 4px;
+            border: none;
+        }
+        input[type="submit"] {
+            background-color: #7b61ff;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>NetLayer</h1>
+        <nav>
+            <a href="#">Services</a>
+            <a href="#">Company</a>
+            <a href="#">Insights</a>
+            <a href="#">Help</a>
+            <span class="lang-toggle" onclick="alert('النسخة العربية تحت التطوير')">العربية</span>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Empowering IT solutions for your business</h2>
+        <p>Streamline your infrastructure with our expert services. Discover how we can enhance your operations.</p>
+        <div class="buttons">
+            <a href="#" class="btn-primary">Get Started</a>
+            <a href="#" class="btn-secondary">Learn More</a>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="stat">
+            <h3>25K+</h3>
+            <p>Projects completed</p>
+        </div>
+        <div class="stat">
+            <h3>15K+</h3>
+            <p>Satisfied clients</p>
+        </div>
+        <div class="stat">
+            <h3>10K+</h3>
+            <p>Hours saved</p>
+        </div>
+        <div class="stat">
+            <h3>5K+</h3>
+            <p>Consultations</p>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Connect with our team</h2>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="tel" name="phone" placeholder="Your Phone Number" required>
+            <textarea name="message" placeholder="Your Request" rows="5" required></textarea>
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+
+</body>
+</html>
