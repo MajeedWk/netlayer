@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NetLayer</title>
+    <title>NetLayer | نت لاير</title>
     <style>
         body {
             margin: 0;
@@ -19,30 +19,30 @@
             align-items: center;
             background-color: #0e1b2c;
         }
-        header h1 {
-            margin: 0;
-        }
         nav a, .lang-toggle {
             margin-left: 30px;
             color: white;
             text-decoration: none;
             cursor: pointer;
         }
-        .hero {
-            padding: 80px 40px;
-            text-align: left;
-            background-color: #0e1b2c;
+        .section {
+            display: none;
         }
-        .hero h2 {
-            font-size: 36px;
+        .section.active {
+            display: block;
+        }
+        .hero, .stats, .contact {
+            padding: 40px;
+            background-color: #0e1b2c;
+            border-top: 1px solid #1f2b3a;
+        }
+        .hero h2, .stats h3, .contact h2 {
+            font-size: 32px;
             margin-bottom: 15px;
         }
-        .hero p {
+        .hero p, .stat p {
             font-size: 18px;
             color: #cbd5e0;
-        }
-        .buttons {
-            margin-top: 25px;
         }
         .buttons a {
             display: inline-block;
@@ -63,22 +63,8 @@
         .stats {
             display: flex;
             justify-content: space-around;
-            padding: 60px 20px;
-            background-color: #0a1727;
         }
         .stat {
-            text-align: center;
-        }
-        .stat h3 {
-            font-size: 28px;
-            margin-bottom: 5px;
-        }
-        .contact {
-            padding: 40px;
-            background-color: #0e1b2c;
-            border-top: 1px solid #1f2b3a;
-        }
-        .contact h2 {
             text-align: center;
         }
         form {
@@ -103,45 +89,57 @@
 </head>
 <body>
 
-    <header>
-        <h1>NetLayer</h1>
-        <nav>
-            <a href="#">Services</a>
-            <a href="#">Company</a>
-            <a href="#">Insights</a>
-            <a href="#">Help</a>
-            <span class="lang-toggle" onclick="alert('النسخة العربية تحت التطوير')">العربية</span>
-        </nav>
-    </header>
 
+<header>
+    <img src="logo.png" alt="NetLayer Logo" style="height:40px;">
+
+    <h1>NetLayer | نت لاير</h1>
+    <nav>
+        <span class="lang-toggle" onclick="switchLang('en')">English</span>
+        <span class="lang-toggle" onclick="switchLang('ar')">العربية</span>
+    <a href="#">Profile</a></nav>
+</header>
+
+<div class="section" id="en" dir="ltr">
     <section class="hero">
         <h2>Empowering IT solutions for your business</h2>
         <p>Streamline your infrastructure with our expert services. Discover how we can enhance your operations.</p>
         <div class="buttons">
             <a href="#" class="btn-primary">Get Started</a>
             <a href="#" class="btn-secondary">Learn More</a>
-        </div>
+        
+<section class="hero">
+    <h2>Who We Are</h2>
+    <p>NetLayer is a Saudi-based IT provider offering professional passive network services including structured cabling, cabinet setup, and network optimization. We streamline infrastructure for businesses of all sizes across the Kingdom.</p>
+</section>
+</div>
     </section>
-
     <section class="stats">
-        <div class="stat">
-            <h3>25K+</h3>
-            <p>Projects completed</p>
-        </div>
-        <div class="stat">
-            <h3>15K+</h3>
-            <p>Satisfied clients</p>
-        </div>
-        <div class="stat">
-            <h3>10K+</h3>
-            <p>Hours saved</p>
-        </div>
-        <div class="stat">
-            <h3>5K+</h3>
-            <p>Consultations</p>
-        </div>
+        <div class="stat"><h3>120+</h3><p>Projects completed</p>
+<section class="hero">
+    <h2>Who We Are</h2>
+    <p>NetLayer is a Saudi-based IT provider offering professional passive network services including structured cabling, cabinet setup, and network optimization. We streamline infrastructure for businesses of all sizes across the Kingdom.</p>
+</section>
+</div>
+        <div class="stat"><h3>90+</h3><p>Satisfied clients</p>
+<section class="hero">
+    <h2>Who We Are</h2>
+    <p>NetLayer is a Saudi-based IT provider offering professional passive network services including structured cabling, cabinet setup, and network optimization. We streamline infrastructure for businesses of all sizes across the Kingdom.</p>
+</section>
+</div>
+        <div class="stat"><h3>250+</h3><p>Hours saved</p>
+<section class="hero">
+    <h2>Who We Are</h2>
+    <p>NetLayer is a Saudi-based IT provider offering professional passive network services including structured cabling, cabinet setup, and network optimization. We streamline infrastructure for businesses of all sizes across the Kingdom.</p>
+</section>
+</div>
+        <div class="stat"><h3>60+</h3><p>Consultations</p>
+<section class="hero">
+    <h2>Who We Are</h2>
+    <p>NetLayer is a Saudi-based IT provider offering professional passive network services including structured cabling, cabinet setup, and network optimization. We streamline infrastructure for businesses of all sizes across the Kingdom.</p>
+</section>
+</div>
     </section>
-
     <section class="contact">
         <h2>Connect with our team</h2>
         <form>
@@ -152,6 +150,77 @@
             <input type="submit" value="Send Message">
         </form>
     </section>
+
+<section class="hero">
+    <h2>Who We Are</h2>
+    <p>NetLayer is a Saudi-based IT provider offering professional passive network services including structured cabling, cabinet setup, and network optimization. We streamline infrastructure for businesses of all sizes across the Kingdom.</p>
+</section>
+</div>
+
+<div class="section" id="ar" dir="rtl">
+    <section class="hero">
+        <h2>نقدّم حلول شبكية احترافية لبنيتك التحتية</h2>
+        <p>نقوم بتمديد الشبكات، تجهيز الكابينات، وتنظيم المواقع بكل احترافية وسرعة.</p>
+        <div class="buttons">
+            <a href="#" class="btn-primary">ابدأ الآن</a>
+            <a href="#" class="btn-secondary">اعرف أكثر</a>
+        
+<section class="hero">
+    <h2>Who We Are</h2>
+    <p>NetLayer is a Saudi-based IT provider offering professional passive network services including structured cabling, cabinet setup, and network optimization. We streamline infrastructure for businesses of all sizes across the Kingdom.</p>
+</section>
+</div>
+    </section>
+    <section class="stats">
+        <div class="stat"><h3>١٢٠+</h3><p>مشروع منفذ</p>
+<section class="hero">
+    <h2>Who We Are</h2>
+    <p>NetLayer is a Saudi-based IT provider offering professional passive network services including structured cabling, cabinet setup, and network optimization. We streamline infrastructure for businesses of all sizes across the Kingdom.</p>
+</section>
+</div>
+        <div class="stat"><h3>٩٠+</h3><p>عميل سعيد</p>
+<section class="hero">
+    <h2>Who We Are</h2>
+    <p>NetLayer is a Saudi-based IT provider offering professional passive network services including structured cabling, cabinet setup, and network optimization. We streamline infrastructure for businesses of all sizes across the Kingdom.</p>
+</section>
+</div>
+        <div class="stat"><h3>٢٥٠+</h3><p>ساعة عمل</p>
+<section class="hero">
+    <h2>Who We Are</h2>
+    <p>NetLayer is a Saudi-based IT provider offering professional passive network services including structured cabling, cabinet setup, and network optimization. We streamline infrastructure for businesses of all sizes across the Kingdom.</p>
+</section>
+</div>
+        <div class="stat"><h3>٦٠+</h3><p>استشارة ميدانية</p>
+<section class="hero">
+    <h2>Who We Are</h2>
+    <p>NetLayer is a Saudi-based IT provider offering professional passive network services including structured cabling, cabinet setup, and network optimization. We streamline infrastructure for businesses of all sizes across the Kingdom.</p>
+</section>
+</div>
+    </section>
+    <section class="contact">
+        <h2>تواصل معنا</h2>
+        <form>
+            <input type="text" name="name" placeholder="الاسم الكامل" required>
+            <input type="email" name="email" placeholder="البريد الإلكتروني" required>
+            <input type="tel" name="phone" placeholder="رقم الجوال" required>
+            <textarea name="message" placeholder="أكتب طلبك هنا" rows="5" required></textarea>
+            <input type="submit" value="إرسال الطلب">
+        </form>
+    </section>
+
+<section class="hero">
+    <h2>Who We Are</h2>
+    <p>NetLayer is a Saudi-based IT provider offering professional passive network services including structured cabling, cabinet setup, and network optimization. We streamline infrastructure for businesses of all sizes across the Kingdom.</p>
+</section>
+</div>
+
+<script>
+    function switchLang(lang) {
+        document.querySelectorAll('.section').forEach(sec => sec.classList.remove('active'));
+        document.getElementById(lang).classList.add('active');
+    }
+    switchLang('en'); // default language
+</script>
 
 </body>
 </html>
